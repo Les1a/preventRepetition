@@ -1,7 +1,7 @@
 def get_unique_file_name(file_name):
     import os
     '''避免重名'''
-    if not os.path.isdir(file_name):
+    if not os.path.isfile(file_name):
         return file_name
     else:
         base_name, ext = os.path.splitext(file_name)
